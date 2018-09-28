@@ -5,12 +5,13 @@
 	margin-top: 20%;
 	margin-left: 25%;
 	transition: 10s;
-	/*animation-name: box;
+	animation-name: box;
 	position:absolute;
-    animation-direction: alternate;
-    animation: movement 10s linear ;
-    -webkit-animation: movement 10s linear ;
-    animation-iteration-count: 2;*/
+	animation-duration: 20s;
+    animation: box 20s linear ;
+    -webkit-animation: box 20s linear ;
+    left: 0;
+    
 	
 }
 
@@ -33,7 +34,7 @@
 	bottom: 0px;
 	left: 0px;
 	z-index: -1;
-	transition: 10s;
+	transition: 3s;
 
 }
 
@@ -43,28 +44,12 @@
 }
 
 @keyframes box {
-    0% {
-    left: 0%;
-  }
-  50% {
-    left: 100%; /* for moving right */
-  }
-  80% {
-    left: 0%; /* for moving back or left */
-  }
+    100% {
+        left:100%;
+    }
 }
-
-@-webkit-keyframes movement {
-    0% {
-    left: 0%;
-  }
-  50% {
-    left: 100%; /* for moving right */
-  }
-  100% {
-    left: 0%; /* for moving back or left */
-  }
+@-webkit-keyframes box {
+    100% {
+        left:100%;
+    }
 }
-
-
-
