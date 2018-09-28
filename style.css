@@ -1,8 +1,39 @@
 .box{
+	position: relative;
 	height: 100px;
 	width: 100px;
 	border: 2px solid black;
-	margin-top: 10%;
-	margin-left: 10%;
-	transition: 5s;
+	margin-top: 20%;
+	margin-left: 25%;
+	transition: 3s;
 }
+
+.up:hover{
+	border: 10px solid white;
+    border-radius: 100px;
+    background-color: #48dbfb;
+    box-shadow: 0px 0px 100px #48dbfb;
+    transform: rotate(720deg);
+
+}
+
+#background{
+	position:absolute;
+	background-color: white;
+	top: 0px;
+	right: 0px;
+	bottom: 0px;
+	left: 0px;
+	z-index: -1;
+	transition: 3s;
+
+}
+
+.box:hover ~ #background{
+  background-color: rgb(2,2,2);
+
+}
+
+
+
+
