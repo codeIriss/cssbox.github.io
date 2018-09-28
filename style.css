@@ -1,47 +1,27 @@
 .box{
-	position: absolute;
 	height: 100px;
 	width: 100px;
 	border: 2px solid black;
 	margin-top: 20%;
 	margin-left: 25%;
-	transition: 3s;
-	animation-name: box;
-	animation-duration: 5s;
-	animation-direction: alternate;
-
+	transition: 10s;
+	/*animation-name: box;
+	position:absolute;
+    animation-direction: alternate;
+    animation: movement 10s linear ;
+    -webkit-animation: movement 10s linear ;
+    animation-iteration-count: 2;*/
+	
 }
 
-@keyframes box {
-    0% {
-    left: 0%;
-  }
-  50% {
-    left: 100%; /* for moving right */
-  }
-  100% {
-    left: 0%; /* for moving back or left */
-  }
-}
-
-@-webkit-keyframes box {
-    0% {
-    left: 0%;
-  }
-  50% {
-    left: 100%; /* for moving right */
-  }
-  100% {
-    left: 0%; /* for moving back or left */
-  }
-}
 
 .up:hover{
 	border: 10px solid white;
     border-radius: 100px;
     background-color: #48dbfb;
     box-shadow: 0px 0px 100px #48dbfb;
-    transform: rotate(720deg);
+    transform: rotate(7200deg);
+
 
 }
 
@@ -53,7 +33,7 @@
 	bottom: 0px;
 	left: 0px;
 	z-index: -1;
-	transition: 3s;
+	transition: 10s;
 
 }
 
@@ -62,11 +42,29 @@
 
 }
 
-@keyframes example {
-    from {background-color: red;}
-    to {background-color: yellow;}
+@keyframes box {
+    0% {
+    left: 0%;
+  }
+  50% {
+    left: 100%; /* for moving right */
+  }
+  80% {
+    left: 0%; /* for moving back or left */
+  }
 }
 
+@-webkit-keyframes movement {
+    0% {
+    left: 0%;
+  }
+  50% {
+    left: 100%; /* for moving right */
+  }
+  100% {
+    left: 0%; /* for moving back or left */
+  }
+}
 
 
 
